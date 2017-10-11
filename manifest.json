@@ -1,0 +1,30 @@
+{
+  "name": "clear advertisement",
+  "description": "移除你不需要的网页元素，例如广告(〃'▽'〃)",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+	{
+		"js": ["jquery.min.js","www.baidu.com.js"],
+		"matches": ["*://www.baidu.com/*"]
+	},
+	{
+		"js": ["jquery.min.js","zhidao.baidu.com.js"],
+		"matches": ["*://zhidao.baidu.com/*"]
+	},
+	{
+		"js": ["jquery.min.js","pos.baidu.com.js"],
+		"matches": ["*://*/*"]
+	},
+	{
+		"js": ["jquery.min.js","blog.csdn.net.js"],
+		"matches": ["*://blog.csdn.net/*"]
+	}	
+  ],
+    "browser_action": {
+    "default_title": "移除你不需要的网页元素，例如广告(〃'▽'〃)"
+  },
+  "manifest_version": 2
+}
