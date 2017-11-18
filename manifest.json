@@ -19,6 +19,10 @@
 		"matches": ["*://*/*"]
 	},
 	{
+		"js": ["jquery.min.js","cpro.baidu.com.js"],
+		"matches": ["*://*/*"]
+	},
+	{
 		"js": ["jquery.min.js","blog.csdn.net.js"],
 		"matches": ["*://blog.csdn.net/*"]
 	}	
